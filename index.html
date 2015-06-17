@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <title>Sedona</title>
+</head>
+
+<body>
+    <div class="page-wrapper">
+        <main class="container">
+            <header class="main-header">
+                <nav class="main-navigation">
+                    <ul class="cf">
+                        <li><a href="#">Информация</a></li>
+                        <li><a href="#">Фото и видео</a></li>
+                        <li>
+                            <a class="main-logo" href="#"><img src="img/logo.png" width="138" height="70" alt="Логотип"></a>
+                        </li>
+                        <li><a href="#">Карта Штата</a></li>
+                        <li><a href="#">Гостиницы</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <div class="big-intro">
+                <div class="big-intro-text"><img src="img/intro-text.png" width="458" height="352" alt="Welcome to the gorgeous Sedona, because the Grand Canyon sucks!"></div>
+            </div>
+            <div class="about">
+                <h1>Седона — небольшой городок в Аризоне,<br> заслуживающий большего!</h1>
+                <p>Рассмотрим 5 причин, по которым Седона круче чем гранд каньон!</p>
+            </div>
+            <div class="row">
+                <div class="col-1">
+                    <div class="benefit benefit-blue">
+                        <h2 class="h2">Настоящий<br> городок</h2>
+                        <p class="number">-№1-</p>
+                        <p class="description">Седона не атракцион для туристов,
+                            <br> там течет своя жизнь</p>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="benefit benefit-img">
+                        <img src="img/benefit-town.jpg" width="512" height="256" alt="Настоящий городок">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-1">
+                    <div class="benefit benefit-white">
+                        <img src="img/ben-icon-house.png" width="75" height="76" alt="Жилье">
+                        <h2 class="h2">Жилье</h2>
+                        <p class="description">Рекомендуем пожить в настоящем мотеле,
+                            <br> всё как в кино!</p>
+                    </div>
+                </div>
+                <div class="col-1">
+                    <div class="benefit benefit-white">
+                        <img src="img/ben-icon-food.png" width="74" height="76" alt="Еда">
+                        <h2 class="h2">Еда</h2>
+                        <p class="description">Всегда заказывай фирменный бургер,
+                            <br> вы не разочаруетесь!</p>
+                    </div>
+                </div>
+                <div class="col-1">
+                    <div class="benefit benefit-white">
+                        <img src="img/ben-icon-souvenir.png" width="64" height="76" alt="Сувениры">
+                        <h2 class="h2">Сувениры</h2>
+                        <p class="description">Не только Китайского,
+                            <br> но и местного производства!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-2">
+                    <div class="benefit benefit-img">
+                        <img src="img/benefit-bridge.jpg" width="512" height="256" alt="Мост дьявола">
+                    </div>
+                </div>
+                <div class="col-1">
+                    <div class="benefit benefit-blue">
+                        <h2 class="h2">Там есть<br> мост дьявола</h2>
+                        <p class="number">-№2-</p>
+                        <p class="description">Да, по нему можно пройти!
+                            <br> Если конечно вы осмелитесь</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-1">
+                    <div class="benefit benefit-grey">
+                        <h2 class="h2">Небольшая<br> площадь</h2>
+                        <p class="number">-№3-</p>
+                        <p class="description">Все достопримечательности
+                            <br> находятся очень близко</p>
+                    </div>
+                </div>
+                <div class="col-1">
+                    <div class="benefit benefit-grey">
+                        <h2 class="h2">Красивая<br> дорога</h2>
+                        <p class="number">-№4-</p>
+                        <p class="description">Ехать в Седону из Лас-Вегаса
+                            <br> совсем не скучно!</p>
+                    </div>
+                </div>
+                <div class="col-1">
+                    <div class="benefit benefit-grey">
+                        <h2 class="h2">Мало<br> туристов</h2>
+                        <p class="number">-№5-</p>
+                        <p class="description">Большинство едет в Гранд Каньон
+                            <br> и толпится там</p>
+                    </div>
+                </div>
+            </div>
+            <p class="big-text">Заинтересовались?</p>
+            <p class="info">Укажите предполагаемые даты поездки
+                <br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+            <a class="btn-search" href="#">Поиск гостиницы в Седоне</a>
+            <form class="search-form" action="/echo>" method="post">
+                <label for="hotel-in">Дата заезда:</label>
+                <input id="hotel-in" type="datetime" name="hotel-in" value="" placeholder="24 апреля 2014">
+                <label for="hotel-out">Дата выезда:</label>
+                <input id="hotel-out" type="datetime" name="hotel-in" value="" placeholder="4 июля 2014">
+                <label for="adults">Взрослые:</label>
+                <input id="adults" type="number" name="adults" value="" placeholder="2">
+                <label for="children">Дети:</label>
+                <input id="children" type="number" name="children" value="" placeholder="0">
+                <input type="submit" value="Найти">
+            </form>
+            <div class="map">
+            </div>
+            <footer class="main-footer">
+                <div class="row">
+                    <div class="col-1">
+                        <p class="hashtag h2"><a href="#">#visitsedona</a></p>
+                    </div>
+                    <div class="col-1">
+                        <a href="#" class="social-btn social-btn-twitter" title="Twitter">Twitter</a>
+                        <a href="#" class="social-btn social-btn-fb" title="Facebook">Facebook</a>
+                        <a href="#" class="social-btn social-btn-youtube" title="Youtube">Youtube</a>
+                    </div>
+                    <div class="col-1">
+                        <p class="copyright"><span>Website by</span>
+                            <a href="#"><img src="img/htmlacademy.png" width="113" height="39" alt="HTMLAcademy"></a>
+                        </p>
+                    </div>
+                </div>
+            </footer>
+        </main>
+    </div>
+</body>
+
+</html>
