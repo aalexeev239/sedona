@@ -178,6 +178,14 @@ ul {
     text-align: center;
 }
 
+.big-intro {
+    background-image: url(../img/intro-bg.jpg);
+    text-align: center;
+    background-position: center center;
+    background-repeat: none;
+    background-size: cover;
+}
+
 .about h1,
 p {
     text-align: center;
