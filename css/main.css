@@ -186,6 +186,15 @@ ul {
     background-size: cover;
 }
 
+.intro-bottom {
+    height: 37px;
+    background-image: url(../img/intro-bottom.png);
+    text-align: center;
+    background-position: bottom;
+    background-repeat: none;
+    background-size: cover;
+}
+
 .about h1,
 p {
     text-align: center;
